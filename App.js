@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, SafeAreaView, Button} from 'react-native';
+import {Text, View, SafeAreaView, Button, StyleSheet} from 'react-native';
 
 function App() {
   function sayHello() {
@@ -7,8 +7,8 @@ function App() {
   }
 
   return (
-    <SafeAreaView style={{backgroundColor: 'black'}}>
-      <View>
+    <SafeAreaView>
+      <View style={style.container}>
         <Text style={{color: 'purple', fontSize: 50}}>Hello World</Text>
       </View>
       <Button
@@ -20,5 +20,14 @@ function App() {
     </SafeAreaView>
   );
 }
+
+const style = StyleSheet.create({
+  //bu kısım json objesi
+  container: {
+    backgroundColor: "red",
+    margin: 20,
+    borderRadius: 8,
+  }
+})
 
 export default App;
