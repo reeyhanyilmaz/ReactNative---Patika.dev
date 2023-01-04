@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Button, SafeAreaView, StyleSheet, Text} from 'react-native';
+import {Button, SafeAreaView, StyleSheet, Switch, Text} from 'react-native';
 // import Card from './components/Card';
 
 function App() {
@@ -39,6 +39,9 @@ function App() {
       {/* custom component part **************************** */}
       {/* <Card title="Reyhan" text="frontend and mobile developer" />
       <Card title="Mabel Matiz" text="Antidepresan" /> */}
+
+      {/* <Switch value={} onValueChange={} />  */}
+      {/* value state değeri, onValueChange değiştirecek func */}
 
       {hello && <Hello />}
       <Button title="hello" onPress={updateFlag} />
