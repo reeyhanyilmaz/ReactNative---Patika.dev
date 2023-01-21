@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Button, SafeAreaView, StyleSheet, Switch, Text} from 'react-native';
 // import Card from './components/Card';
+import {NavigationContainer} from '@react-navigation/native';
 
 function App() {
   // function sayHello() {
@@ -21,32 +22,35 @@ function App() {
   console.log('render'); // bu kısım her seferinde çalışır.
 
   return (
-    <SafeAreaView style={style.container}>
-      {/* <View style={style.upper_view_container}> */}
-      {/* <Text style={{color: 'purple', fontSize: 50}}>Hello World</Text> */}
-      {/* <Text>Hello World</Text>
+    <NavigationContainer>
+      {/* sayfalar arası gecisi saglar */}
+      <SafeAreaView style={style.container}>
+        {/* <View style={style.upper_view_container}> */}
+        {/* <Text style={{color: 'purple', fontSize: 50}}>Hello World</Text> */}
+        {/* <Text>Hello World</Text>
       </View> */}
-      {/* <Button
+        {/* <Button
         title="Here press!"
         onPress={sayHello}
         disabled={false}
         color="#e6e6fa"
       /> */}
-      {/* <View style={style.bottom_view_container}>
+        {/* <View style={style.bottom_view_container}>
         <Text>Hello 2</Text>
       </View> */}
 
-      {/* custom component part **************************** */}
-      {/* <Card title="Reyhan" text="frontend and mobile developer" />
+        {/* custom component part **************************** */}
+        {/* <Card title="Reyhan" text="frontend and mobile developer" />
       <Card title="Mabel Matiz" text="Antidepresan" /> */}
 
-      {/* <Switch value={} onValueChange={} />  */}
-      {/* value state değeri, onValueChange değiştirecek func */}
+        {/* <Switch value={} onValueChange={} />  */}
+        {/* value state değeri, onValueChange değiştirecek func */}
 
-      {hello && <Hello />}
-      <Button title="hello" onPress={updateFlag} />
-      {/* varsa göster yoksa gizle demek */}
-    </SafeAreaView>
+        {hello && <Hello />}
+        <Button title="hello" onPress={updateFlag} />
+        {/* varsa göster yoksa gizle demek */}
+      </SafeAreaView>
+    </NavigationContainer>
   );
 }
 
